@@ -59,3 +59,7 @@
           combine({'KUBECONFIG': cifmw_openshift_login_kubeconfig})
       }}
     cacheable: true
+
+- name: "###############TEST1"
+  ansible.builtin.debug:
+    var: cifmw_install_yamls_environment

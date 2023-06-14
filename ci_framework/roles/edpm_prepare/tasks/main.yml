@@ -14,6 +14,10 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
+- name: "###############TEST2"
+  ansible.builtin.debug:
+    var: cifmw_install_yamls_environment
+
 - name: Set install_yamls Makefile environment variables
   tags:
     - always

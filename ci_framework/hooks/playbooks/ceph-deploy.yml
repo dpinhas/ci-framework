@@ -2,6 +2,11 @@
 - hosts: "{{ cifmw_target_hook_host | default('localhost') }}"
   gather_facts: false
   tasks:
+
+    - name: "###############TEST3"
+      ansible.builtin.debug:
+        var: cifmw_install_yamls_environment
+
     # Load the custom parameters we set in the main play. That way, we will
     # get access to the needed cifmw_make_ceph_environment parameter
     - name: Load all of our cifmw variables
